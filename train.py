@@ -38,7 +38,7 @@ model.compile(
 )
 
 # Train model
-model.fit(X_train, y_train, epochs=100, batch_size=8, verbose=1)
+model.fit(X_train, y_train, epochs=150, batch_size=8, verbose=1)
 
 # Prediction
 y_pred = (model.predict(X_test) > 0.5)
@@ -46,4 +46,5 @@ y_pred = (model.predict(X_test) > 0.5)
 # Accuracy
 acc = accuracy_score(y_test, y_pred)
 print("Model Accuracy:", acc)
+
 
